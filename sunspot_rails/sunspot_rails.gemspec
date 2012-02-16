@@ -6,7 +6,7 @@ $:.unshift(lib) unless $:.include?(lib)
 require 'sunspot/version'
 
 Gem::Specification.new do |s|
-  s.name        = "sunspot_rails"
+  s.name        = "silverpond_sunspot_rails"
   s.version     = Sunspot::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Mat Brown', 'Peer Allan', 'Dmitriy Dzema', 'Benjamin Krause', 'Marcel de Graaf', 'Brandon Keepers', 'Peter Berkenbosch',
@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency 'sunspot', Sunspot::VERSION
+  s.add_dependency 'silverpond_sunspot', Sunspot::VERSION
   s.add_dependency 'nokogiri'
 
   s.add_development_dependency 'rspec', '~> 1.2'
