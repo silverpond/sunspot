@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency 'silverpond_rsolr', '~>1.0.10'
+  s.add_dependency 'silverpond_rsolr', '~>1.0.11'
   s.add_dependency 'escape', '~>0.0.4'
   s.add_dependency 'pr_geohash', '~>1.0'
 
